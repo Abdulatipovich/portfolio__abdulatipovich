@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+h1, h2, h3, h4, a{
+    font-family: 'Space Mono';
+}
+
+p, .button{
+    font-family: 'Lexend Deca';
+}
+
+.button{
+    padding: 0.5rem 2rem;
+    background-color: #FCB72B;
+    border: 2px solid #FCB72B;
+    color: #ffffff;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.button:hover{
+    color: #FCB72B;
+    border: 2px solid #FCB72B;
+    background-color: transparent;
+}
+
+.title, .header__title{
+    line-height: 1;
+}
+
+.logo, .subtitle, .title{
+    color: #495567;
+}
+
+.navbar-item, p{
+    color: #939caa;
+}
+
+/* navbar */
+.nav{
+    position: relative;
+    height: max-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.row-navbar, .row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{ 
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar{
+    display: inline-block;
+}
+
+.navbar-item{
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: ease 0.2s;
+}
+
+.navbar-item:hover{
+    color: #FCB72B;
+}
+
+/* header */
+.header{
+    position: relative;
+    height: max-content;
+    padding: 5rem 0;
+}
+
+.bcg-img{
+    background: url("../img/careers-bcg-img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(20, 20, 20, 0.5);
+    background-blend-mode: darken;
+}
+
+.header__title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.location__img{
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    flex-basis: 33%;
+    min-width: 300px;
+}
+
+.inform{
+    flex-basis: 33%;
+    min-width: 300px;
+}
+
+/* footer section */
+.footer{
+    position: relative;
+    height: max-content;
+    padding: 5rem 0;
+    background-color:  #495567;
+    margin-top: 10rem;
+}
+
+.footer__title, .footer__logo{
+    color: #ffffff;
+}
+
+.col-4 img{
+    padding-right: 2rem;
+}
+
+.sub__footer{
+    background-color: #333A44;
+}
+
+.socials i{
+    font-size: 2rem;
+    color: #FCB72B;
+    padding-right: 1rem;
+    transition: ease 0.3s;
+}
+
+.socials i:hover{
+    color: #E5ECF4;
+}
+
+.response__img{
+    display: none;
+}
+
+.town__name{
+    display: none;
+}
+
+/* @media */
+@media only screen and (max-width: 992px){
+    *{
+        font-size: 14px;
+    }
+
+    .container{
+        max-width: 769px;
+        text-align: center;
+    }
+
+    .header__title{
+        text-align: left;
+    }
+
+    .location__img{
+        width: 600px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .title, .inform{
+        padding-bottom: 1rem;
+    }
+
+    .footer{
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 754px){
+    *{
+        font-size: 12px;
+    }
+
+    .title, .header__title, .footer__title{
+        font-size: 1.7rem;
+    }
+
+    .container{
+        max-width: 754px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__title{
+        text-align: center;
+    }
+
+    .header{
+        padding: 3rem 0;
+    }
+
+    .title{
+        padding-bottom: 1rem;
+        display: inline-block;
+    }
+
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navbar-item{
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .footer__logo{
+        padding-bottom: 2rem;
+    }
+
+    .col-4 img{
+        width: 150px;
+    }
+
+    .socials{
+        padding: 3rem 0;
+    }
+
+    i.fab.fa-instagram{
+        padding-right: 0;
+        }
+
+    .response__img{
+        display: inline-block;
+        width: 70vw;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+    .location__img{
+        display: none;
+    }
+
+    .towns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .town__name{
+        display: inline-block;
+        background-color: #FEF4DF;
+        padding: 2rem 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
