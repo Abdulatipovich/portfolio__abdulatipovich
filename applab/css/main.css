@@ -1,0 +1,225 @@
+.custom{
+    font-family: 'Baloo 2';
+    color: #242f51;
+    background-color: #e6e8ee;
+}
+
+.navbar{
+    background-color: #e6e8ee;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 8%), -4px -4px 8px #fafbff;
+}
+
+.navbar .container .navbar-brand,
+.navbar .container .navbar-nav .nav-link{
+    color: #242f51;
+}
+
+/* navbar hover effect */
+ul li a {
+    position: relative;
+    transition: 0.5s;
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 70%;
+    left: 0;
+    background: #191919;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.navbar .container .navbar-nav .nav-link:hover {
+    color: #191919;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.button-custom,
+.navbar-toggler{
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 8%), -4px -4px 8px #fafbff;
+}
+
+.button-custom:focus,
+.navbar-toggler:focus{
+    box-shadow: inset 3px 3px 6px rgb(0 0 0 / 20%), inset -3px -3px 6px #fafbff !important;
+}
+
+.button-custom:hover,
+.header__main-info__demo:hover{
+    box-shadow: 12px 12px 24px rgb(0 0 0 / 8%), -12px -12px 24px #fafbff !important;
+}
+
+/* header section */
+
+.header__top-info{
+    background-color: rgb(0 0 0 / 8%);
+}
+
+.header__main-info__demo{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.header__img-custom{
+    width: 75%;
+    float: right;
+}
+
+.bcg-custom{
+    position: absolute;
+    z-index: -999;
+    filter: blur(2px);
+    transform: translateY(-125%);
+}
+
+.header__circle-left{
+    position: absolute;
+    z-index: -2;
+    left: 0;
+}
+
+.header__circle-right{
+    position: absolute;
+    z-index: -1;
+    left: -6rem;
+    top: 7.5rem;
+}
+
+/* key features section */
+.img_cursor-pointer{
+    cursor: pointer;
+}
+
+.key-features__subtitle-red{
+    color: #f55767;
+}
+
+.key-features__subtitle-blue{
+    color: #2563ff;
+}
+
+.key-features__subtitle-green{
+    color: #40975f;
+}
+
+.border-custom{
+    border-right: 0.125rem solid #4b4a48;
+}
+
+.img-3d-button{
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 8%), -4px -4px 8px #fafbff;
+    border-radius: 50%;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.img-3d-button:hover{
+    box-shadow: 12px 12px 24px rgb(0 0 0 / 8%), -12px -12px 24px #fafbff !important;
+}
+
+.border-bottom{
+    border-bottom: 5rem solid #4b4a48;
+}
+
+/* pricing */
+
+.pricing__card{
+    background-color: #E6E8EE;
+    width: max-content;
+}
+
+.pricing__card-header{
+    background-color: #D4D6DB;
+}
+
+.sub-element:active{
+    background-color: white;
+}
+
+
+
+/* testimonial */
+
+.testimonial__accordion-item{
+    background-color: #D4D6DB;
+}
+
+.accordion-header > button{
+    width: 30vw;
+}
+
+/* footer */
+
+.footer{
+    background-color: #2B2C31;
+    height: max-content;
+}
+
+.navbar-footer{
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px hsl(0deg 0% 100% / 6%);
+}
+
+.navbar-footer .navbar-nav .nav-item .nav-link{
+    color: whitesmoke;
+}
+
+ul li a {
+    position: relative;
+    transition: 0.5s;
+}
+
+ul li .nav-link-footer::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 70%;
+    left: 0;
+    background: #fcae61;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.navbar-footer .navbar-nav .nav-item .nav-link:hover {
+    color: #fcae61;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.social{
+    color: #eee;
+    cursor: pointer;
+}
+
+.developer{
+    color: whitesmoke;
+}
+
+.fa-heart{
+    color: #C70039;
+}
