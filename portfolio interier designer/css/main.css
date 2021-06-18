@@ -1,0 +1,447 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header section */
+.header{
+    position: relative;
+}
+
+.header__box{
+    position: relative;
+    width: 350px;
+    height: 550px;
+    border: 7px solid white;
+    float: right;
+    margin-top: 6rem;
+    margin-right: 12rem;
+}
+
+.header__title{
+    display: inline-block;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-left: 4.15rem;
+    background-color: black;
+    letter-spacing: 5px;
+}
+
+.header__subtitle{
+    display: inline-block;
+    color: #B3B3B3;
+    font-size: 2rem;
+    margin-top: 13rem;
+    margin-left: 4.3rem;
+}
+
+.header__name{
+    position: absolute;
+    display: inline-block;
+    color: #B3B3B3;
+    font-size: 2rem;
+    margin-top: 9rem;
+    margin-left: 7.29rem;
+}
+
+.header__line{
+    width: 100%;
+    height: 795px;
+    border-bottom: 10px solid #333333;
+}
+
+.header__line::after {
+    right: 0;
+    margin-right: 200px;
+}
+
+.line::after {
+    position: absolute;
+    content: ' ';
+    width: 120px;
+    height: 10px;
+    background-color: #000;
+    bottom: 0;
+}
+
+/* navbar section */
+.box{
+    position: relative;
+}
+
+.custom{
+    padding-top: 16rem;
+}
+
+.contents{
+    position: relative;
+    height: max-content;
+}
+
+.rotate{
+    display: inline-block;
+    transform: rotate(270deg);
+}
+
+.navbar__rotate{
+    position: absolute;
+    top: 675px;
+}
+
+.title{
+    position: absolute;
+    background-color: #333333;
+    padding: 7rem 5rem 2rem;
+}
+
+.padding-item{
+    padding-bottom: 4rem;
+}
+
+.navbar__line{
+    border-bottom: 10px solid #333333;
+    height: 256px;
+}
+
+.navbar__line::after {
+    left: 0;
+    margin-left: 200px;
+}
+
+.info{
+    color: #B3B3B3;
+}
+
+/* about me section */
+.about-me{
+    position: relative;
+    padding-top: 6rem;
+}
+.about-me__col-2{
+    padding-left: 10rem;
+}
+
+.about__info{
+    margin-left: 50px;
+    font-size: 0.9rem;
+}
+
+.about-me__img{
+    width: 400px;
+    object-fit: cover;
+}
+
+.wrapper{
+    width: 450px;
+    min-height: 210px;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.about__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    text-transform: uppercase;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.stroke {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 1rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #333333;
+    -webkit-text-fill-color: #000000;
+    font-family: Impact, sans-serif;
+}
+.page-number{
+    height:  10rem;
+    font-size: 10rem;
+}
+
+.about-me__line{
+    width: 100%;
+    height: 96px;
+    border-bottom: 10px solid #333333;
+}
+
+.about-me__line::after {
+    right: 0;
+    margin-right: 200px;
+}
+
+
+/* my photo section */
+.my-photo{
+    position: relative;
+    padding-top: 3rem;
+}
+
+.my-photo__line{
+    width: 100%;
+    height: 50px;
+    border-bottom: 10px solid #333333;
+}
+
+.my-photo__line::after {
+    left: 0;
+    margin-left: 200px;
+}
+
+/* 3d renders section */
+.renders{
+    position: relative;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+
+.rotate-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.renders__rotate{
+    font-size: 6rem;
+    font-weight: 300;
+    color: #333333;
+    
+    position: absolute;
+    bottom: 50px;
+    right: -380px;
+    
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+}
+
+.renders__stroke{
+    padding-bottom: 10rem;
+}
+
+.my-photo__line{
+    width: 100%;
+    height: 50px;
+    border-bottom: 10px solid #333333;
+}
+
+.my-photo__line::after {
+    left: 0;
+    margin-left: 200px;
+}
+
+/* light */
+.renders__info{
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.renders-light img{
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.renders-light-two img{
+    width: 100%;
+    height: 450px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.renders-box{
+    position: relative;
+    right: 0;
+    border: 8px solid #333333;
+    padding: 4rem;
+    float: right;
+    border-right: none;
+}
+
+.renders__wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+.renders__title{
+    font-size: 7rem;
+    font-weight: 300;
+    color: #333333;
+
+    text-transform: uppercase;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+}
+
+/* color */
+.overflow-left{
+    overflow: hidden;
+}
+
+.renders-box__left{
+    position: relative;
+    left: 0;
+    border: 8px solid #333333;
+    padding: 4rem;
+    float: left;
+    border-left: none;
+}
+
+
+/* layout */
+.layouts{
+    position: relative;
+}
+
+.renders-box-layout{
+    position: relative;
+    right: 0;
+    padding: 4rem;
+    float: right;
+}
+
+.renders__wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+.renders-layout__title{
+    font-size: 5rem;
+    font-weight: 300;
+    color: #333333;
+
+    text-transform: uppercase;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+}
+
+.layouts__line{
+    width: 100%;
+    height: 96px;
+    border-bottom: 10px solid #333333;
+}
+
+.layouts__line::after {
+    left: 0;
+    margin-left: 200px;
+}
+
+/* house-plans */
+.house-plans{
+    position: relative;
+}
+
+.house-plans__line{
+    width: 100%;
+    height: 48px;
+    border-bottom: 10px solid #333333;
+}
+
+.house-plans__line::after {
+    right: 0;
+    margin-right: 200px;
+}
+
+/* detail draw section */
+.detail-draw{
+    position: relative;
+}
+
+.detail-draw__wrapper{
+    position: relative;
+}
+.detail-draw__title{
+    font-size: 5rem;
+    font-weight: 100;
+    color: #fff;
+    
+    background-color: #333;
+    text-transform: uppercase;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7rem 3rem 2rem;
+    
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+}
+
+.detail-draw__line{
+    width: 100%;
+    height: 48px;
+    border-bottom: 10px solid #333333;
+}
+
+.detail-draw__line::after {
+    left: 0;
+    margin-left: 200px;
+}
+
+/* drivings section */
+.drawing{
+    position: relative;
+}
+.driwings-title{
+    display: inline-block;
+    font-size: 12rem;
+    color: #333333;
+}
+
+.subtitle{
+    color: #333333;
+    font-size: 5rem;
+    padding-left: 6rem;
+}
+
+.drawing__line{
+    width: 100%;
+    height: 96px;
+    border-bottom: 10px solid #333333;
+}
+
+.drawing__line::after {
+    right: 0;
+    margin-right: 200px;
+}
+
+/* footer section */
+.footer{
+    position: relative;
+    top: 12rem;
+    height: 100vh;
+}
+
+.socials p a{
+    text-decoration: none;
+    color: #B3B3B3;
+}
