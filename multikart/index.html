@@ -1,0 +1,4180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="shadow" onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+    <div class="header-contact bg-color-f8 d-xm-none">
+      <div class="container">
+        <div class="row align-items-center color-999 py-3 fs-14">
+          <div class="col-lg-6 col-md-6 d-none d-md-block">
+            <ul class="list-inline m-0">
+              <li class="list-inline-item">
+                <p class="m-0 fs-14">Welcome to Our store Multikart</p>
+              </li>
+              <li class="list-inline-item ps-5 fs-14">
+                <i class="fas fa-phone-alt color-orange pe-2"></i>
+                <p class="m-0 d-inline-block">Call Us: 123 - 456 - 7890</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 text-end">
+            <ul class="list-inline m-0 fs-14">
+              <li class="list-inline-item header-contact-hover">
+                <i class="fas fa-random pe-2"></i>
+                <p class="d-inline-block m-0">Compare</p>
+              </li>
+              <li class="list-inline-item header-contact-hover">
+                <i class="fas fa-heart pe-2"></i>
+                <p class="d-inline-block m-0">Wishlist</p>
+              </li>
+              <li class="list-inline-item">
+                <div class="dropdown" style="z-index: 1000000000">
+                  <a
+                    class="
+                      dropdown-toggle
+                      text-decoration-none
+                      color-999
+                      header-contact-hover
+                      text-end
+                    "
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLinks"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-user pe-2"></i>
+                    My Account
+                  </a>
+                  <ul
+                    class="dropdown-menu border-top shadow fs-14"
+                    aria-labelledby="dropdownMenuLinks"
+                  >
+                    <li><a class="dropdown-item" href="#">Sign In</a></li>
+                    <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="header-navbar sticky-top py-4"
+      id="navbar"
+      style="background-color: #fff"
+    >
+      <div class="container align-items-center py-2 px-0">
+        <nav class="navbar navbar-expand-xl navbar-light p-0">
+          <div class="container-fluid px-0">
+            <div class="navbar-left">
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <i class="fas fa-bars fs-3"></i>
+              </button>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+              >
+                <div class="offcanvas-header border-bottom">
+                  <button
+                    class="btn fs-4 fw-bold text-uppercase"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    id="offcanvasExampleLabel"
+                  >
+                    <i class="fas fa-chevron-left fs-5 pe-2"></i>Back
+                  </button>
+                </div>
+                <div class="offcanvas-body text-uppercase ms-5">
+                  <p class="py-2">Clothing</p>
+                  <br />
+                  <p>Bags</p>
+                  <br />
+                  <p class="py-2">Footwear</p>
+                  <br />
+                  <p>Watches</p>
+                  <br />
+                  <p class="py-2">Accessories</p>
+                  <br />
+                  <p>House of design</p>
+                  <br />
+                  <p class="py-2">Beauty & personal care</p>
+                  <br />
+                  <p>Home & decor</p>
+                  <br />
+                  <p class="pt-2">Kitchen</p>
+                </div>
+              </div>
+
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="multikart logo" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse flex-grow-0"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav mb-2 mb-lg-0 text-uppercase letter-space-07em"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active padding-42"
+                    aria-current="page"
+                    href="#"
+                    >Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link padding-42" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul
+                    class="dropdown-menu shadow border-top"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Review</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">FAQ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blogs</a>
+                </li>
+              </ul>
+              <div class="search-box">
+                <button class="btn-search">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="Type to Search..."
+                />
+              </div>
+              <i class="fas fa-cog fs-4 pe-3 color-222 cursor-pointer"></i>
+              <i
+                class="
+                  fas
+                  fa-shopping-basket
+                  fs-4
+                  color-222
+                  cursor-pointer
+                  pe-2
+                "
+              ></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- header section -->
+    <header id="header" class="header pb-4">
+      <div class="header-carousel">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./assets/img/header_carousel_1.jpg"
+                class="d-block w-100 img-fluid"
+                alt="header_carousel_1"
+              />
+              <div class="carousel-caption d-md-block">
+                <h4 class="fs-18 letter-space-5em color-777 fw-bolder">
+                  Welcome To Fashion
+                </h4>
+                <h2 class="text-uppercase fs-60 color-222 fw-bold mb-3">
+                  Men Fashion
+                </h2>
+                <button
+                  class="
+                    carousel-btn
+                    text-decoration-none text-uppercase
+                    fw-bold
+                    fs-14
+                  "
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img
+                src="./assets/img/header_carousel_2.jpg"
+                class="d-block w-100 img-fluid"
+                alt="header_carousel_2"
+              />
+              <div class="carousel-caption d-md-block">
+                <h4 class="letter-space-5em fs-18 color-777 fw-bolder">
+                  Welcome To Fashion
+                </h4>
+                <h2
+                  class="text-uppercase display-3 fs-60 color-222 fw-bold mb-3"
+                >
+                  Women Fashion
+                </h2>
+                <button
+                  class="
+                    carousel-btn
+                    text-decoration-none text-uppercase
+                    fw-bold
+                    fs-14
+                  "
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev custom-control-prev d-md-flex d-none"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next custom-control-next d-md-flex d-none"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /header section -->
+
+    <!-- main section -->
+
+    <!-- sub bunner section -->
+    <section class="sub-bunner py-5 py-sm-3">
+      <div class="container">
+        <div class="row gy-sm-4">
+          <div class="col-lg-6 col-md-6">
+            <div class="card border-0 rounded-0 sub-bunner-hover">
+              <img
+                src="./assets/img/header_img_1.jpg"
+                class="card-img img-fluid rounded-0"
+                alt="sub bunner img"
+              />
+              <div class="card-img-overlay text-center">
+                <h4 class="fs-18 color-orange fw-bolder text-uppercase m-0">
+                  Save 50%
+                </h4>
+                <h2
+                  class="
+                    text-uppercase
+                    fs-60
+                    color-222
+                    fw-bold
+                    m-0
+                    letter-space-07em
+                  "
+                >
+                  Men
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 pt-xm-2">
+            <div class="card border-0 rounded-0 sub-bunner-hover">
+              <img
+                src="./assets/img/header_img_2.jpg"
+                class="card-img img-fluid rounded-0"
+                alt="sub bunner img"
+              />
+              <div class="card-img-overlay text-center">
+                <h4 class="fs-18 color-orange fw-bolder text-uppercase m-0">
+                  Save 50%
+                </h4>
+                <h2
+                  class="
+                    text-uppercase
+                    fs-60
+                    color-222
+                    fw-bold
+                    m-0
+                    letter-space-07em
+                  "
+                >
+                  Women
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /sub bunner section -->
+
+    <!-- top collection section -->
+    <section class="top-collection pt-4">
+      <div class="container">
+        <div class="top-collection__info text-center">
+          <h4 class="color-orange fs-18">Special Offer</h4>
+          <h2
+            class="
+              fs-36
+              fw-bold
+              text-uppercase
+              position-relative
+              d-inline-block
+              pb-2
+            "
+          >
+            Top Collection <span class="down-line"></span>
+          </h2>
+          <p class="w-50 m-auto color-777 py-4 fs-14">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            quos cum voluptatum dolorem obcaecati, exercitationem consequatur
+            maxime ducimus eveniet accusamus.
+          </p>
+        </div>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_1.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Trim Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $87.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$145.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_2.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Belted Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $111.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$185.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 md-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_3.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Fitted Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $104.40
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$174.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 lg-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_4.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Belted Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $49.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$98.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_5.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Waist Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $184.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$230.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_6.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Crop Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $72.60
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$121.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 md-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_7.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Sleevelees Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $261.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$290.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 lg-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_8.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">V-nek Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $94.50
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$315.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_9.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Wrap Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $69.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$115.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_10.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Floral Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $157.50
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$175.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 md-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_11.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Maxi Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $159.60
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$266.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 lg-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_12.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Boho Tops</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $77.40
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$129.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_13.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Fit-flare Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $133.20
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$148.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_14.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Mini Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $199.50
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$285.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 md-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_15.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Jumpsuit</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $225.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$375.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 lg-d-none mb-3">
+                  <div class="card border-0 position-relative">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_16.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Pink Tunic Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $119.40
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$199.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /top collection section -->
+
+    <!-- paralax section -->
+    <section class="paralax pb-5 pb-sm-3">
+      <div class="position-relative paralax-img" style="padding: 120px 0">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-lg-6 col-md-6 col-sm-6 text-center ps-md-5 paralax-bcg"
+            >
+              <h1 class="color-orange fw-bold fs-100">2021</h1>
+              <h2 class="text-uppercase fw-bold fs-60 fs-xm-40 color-333">
+                Fashion Trends
+              </h2>
+              <h4 class="text-uppercase letter-space-5em color-777 fw-bold">
+                Special offer
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /paralax section -->
+
+    <!-- special products section -->
+    <section class="special-product py-4">
+      <div class="container">
+        <div class="special-product-info text-center">
+          <h4 class="color-orange fs-18">Exclusive Products</h4>
+          <h2
+            class="
+              fs-36
+              text-uppercase
+              fw-bold
+              position-relative
+              d-inline-block
+              pb-2
+            "
+          >
+            Special Products <span class="down-line"></span>
+          </h2>
+        </div>
+        <div class="filters">
+          <div id="myBtnContainer" class="text-center py-4">
+            <a
+              class="
+                text-decoration-none text-uppercase
+                active
+                filter-btn
+                color-2d2a25
+                cursor-pointer
+                fs-18
+              "
+              onclick="filterSelection('newProduct')"
+              >New Products</a
+            >
+            <a
+              class="
+                text-decoration-none text-uppercase
+                filter-btn
+                color-2d2a25
+                cursor-pointer
+                px-4
+                fs-18
+              "
+              onclick="filterSelection('bestSeller')"
+            >
+              Best Sellers</a
+            >
+            <a
+              class="
+                text-decoration-none text-uppercase
+                filter-btn
+                color-2d2a25
+                cursor-pointer
+                pe-4
+                fs-18
+              "
+              onclick="filterSelection('featured')"
+            >
+              Featured Products</a
+            >
+            <a
+              class="
+                text-decoration-none text-uppercase
+                filter-btn
+                color-2d2a25
+                cursor-pointer
+                fs-18
+              "
+              onclick="filterSelection('onSale')"
+            >
+              On Sale</a
+            >
+          </div>
+          <div class="filter-items">
+            <!-- new-Product-filter -->
+            <div class="new-Product-filter">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative filterDiv newProduct"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_1.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Trim Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $87.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$145.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative newProduct filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_4.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Belted Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $49.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$98.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative newProduct filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_8.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">V-nek Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $94.50
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$315.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative newProduct filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_11.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Maxi Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $159.60
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$266.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative newProduct filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_13.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                          class="
+                            card-hover-icons
+                            position-absolute
+                            bottom-0
+                            end-0
+                            fs-5
+                          "
+                        >
+                          <i class="fas fa-shopping-cart d-block"></i>
+                          <i class="fas fa-heart d-block py-2"></i>
+                          <i class="fas fa-search d-block"></i>
+                          <i class="fas fa-sync-alt d-block py-2"></i>
+                        </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Fit-flare Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $133.20
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$148.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative newProduct filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_6.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                          class="
+                            card-hover-icons
+                            position-absolute
+                            bottom-0
+                            end-0
+                            fs-5
+                          "
+                        >
+                          <i class="fas fa-shopping-cart d-block"></i>
+                          <i class="fas fa-heart d-block py-2"></i>
+                          <i class="fas fa-search d-block"></i>
+                          <i class="fas fa-sync-alt d-block py-2"></i>
+                        </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Midi Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $240.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$400.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative newProduct filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_7.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                          class="
+                            card-hover-icons
+                            position-absolute
+                            bottom-0
+                            end-0
+                            fs-5
+                          "
+                        >
+                          <i class="fas fa-shopping-cart d-block"></i>
+                          <i class="fas fa-heart d-block py-2"></i>
+                          <i class="fas fa-search d-block"></i>
+                          <i class="fas fa-sync-alt d-block py-2"></i>
+                        </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Tulip Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $130.50
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$145.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative newProduct filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_8.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                          class="
+                            card-hover-icons
+                            position-absolute
+                            bottom-0
+                            end-0
+                            fs-5
+                          "
+                        >
+                          <i class="fas fa-shopping-cart d-block"></i>
+                          <i class="fas fa-heart d-block py-2"></i>
+                          <i class="fas fa-search d-block"></i>
+                          <i class="fas fa-sync-alt d-block py-2"></i>
+                        </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Skater Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $126.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$210.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /new-Product-filter -->
+
+            <!-- best-seller-filter -->
+            <div class="best-seller-filter position-relative mt-32">
+              <div class="row mt-32">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_2.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Belted Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $111.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$185.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_6.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Crop Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $72.60
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$121.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_7.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Sleevelees Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $261.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$290.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_12.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Boho Tops</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $77.40
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$129.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_15.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                          class="
+                            card-hover-icons
+                            position-absolute
+                            bottom-0
+                            end-0
+                            fs-5
+                          "
+                        >
+                          <i class="fas fa-shopping-cart d-block"></i>
+                          <i class="fas fa-heart d-block py-2"></i>
+                          <i class="fas fa-search d-block"></i>
+                          <i class="fas fa-sync-alt d-block py-2"></i>
+                        </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Jumpsuit</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $225.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$375.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_14.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                          class="
+                            card-hover-icons
+                            position-absolute
+                            bottom-0
+                            end-0
+                            fs-5
+                          "
+                        >
+                          <i class="fas fa-shopping-cart d-block"></i>
+                          <i class="fas fa-heart d-block py-2"></i>
+                          <i class="fas fa-search d-block"></i>
+                          <i class="fas fa-sync-alt d-block py-2"></i>
+                        </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Skater Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $161.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$230.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_1.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Bodycon Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $153.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$180.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative bestSeller filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_16.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">
+                        Off Shoulder Dress
+                      </p>
+                      <p class="fs-5 fw-bold m-0">
+                        $144.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$240.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /best-seller-filter -->
+
+            <!-- featured-product-filter -->
+            <div class="featured-product-filter position-relative mt-32">
+              <div class="row mt-32">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_3.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Fitted Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $104.40
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$174.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_5.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Waist Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $184.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$230.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_9.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Wrap Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $69.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$115.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_10.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Floral Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $157.50
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$175.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_14.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Mini Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $199.50
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$285.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_16.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Pink Tunic Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $119.40
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$199.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_19.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Skater Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $84.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$140.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div
+                    class="card border-0 position-relative featured filterDiv"
+                  >
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_20.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Black Short Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $96.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$160.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /featured-product-filter -->
+
+            <!-- on-sale-filter -->
+            <div class="on-sale-filter position-relative mt-32">
+              <div class="row mt-32">
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_4.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Belted Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $49.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$98.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/top_collection_12.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Boho Tops</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $77.40
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$129.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_22.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Knee Length Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $234.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$260.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_23.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Flutter Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $198.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$330.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_24.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Chokor Neck Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $287.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$410.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_25.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Layered Dress</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $45.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$75.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_26.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Choker Neck Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $93.00
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$155.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xm-6 mb-3">
+                  <div class="card border-0 position-relative onSale filterDiv">
+                    <div class="box position-relative">
+                      <img
+                        class="img-fluid hover-icons"
+                        alt="100%x280"
+                        src="./assets/img/special_product_27.jpg"
+                      />
+                      <!-- icons -->
+                      <!-- <div
+                        class="
+                          card-hover-icons
+                          position-absolute
+                          bottom-0
+                          end-0
+                          fs-5
+                        "
+                      >
+                        <i class="fas fa-shopping-cart d-block"></i>
+                        <i class="fas fa-heart d-block py-2"></i>
+                        <i class="fas fa-search d-block"></i>
+                        <i class="fas fa-sync-alt d-block py-2"></i>
+                      </div> -->
+                      <!-- /icons -->
+                    </div>
+                    <div
+                      class="
+                        left-new-overly
+                        position-absolute
+                        bg-color-orange
+                        rounded-circle
+                        m-2
+                      "
+                    >
+                      <p
+                        class="m-0 text-uppercase fw-bold text-light"
+                        style="font-size: 0.8rem; padding: 11px 5px"
+                      >
+                        New
+                      </p>
+                    </div>
+                    <div class="right-overly position-absolute end-0 mt-2 me-2">
+                      <p class="text-uppercase fw-bold m-0 on-sale">on sale</p>
+                    </div>
+                    <div class="card-body ps-0">
+                      <div
+                        class="reward text-warning"
+                        style="font-size: 0.9rem"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star px-1"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p class="text-muted mb-0 fw-bolder">Rolled Sleeve Top</p>
+                      <p class="fs-5 fw-bold m-0">
+                        $196.52
+                        <span
+                          class="
+                            text-muted text-decoration-line-through
+                            fs-6
+                            fw-lighter
+                          "
+                          >$289.00</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /on-sale-filter -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /special products section -->
+
+    <!-- services section -->
+    <section class="services py-5">
+      <div class="container border-top border-bottom py-md-4">
+        <div class="row text-center align-items-center">
+          <div class="col-lg-4 col-md-4 border-end border-sm-none py-4 py-xm-2">
+            <svg
+              _ngcontent-serverApp-c81=""
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -117 679.99892 679"
+              class="align-middle pe-2"
+            >
+              <path
+                _ngcontent-serverApp-c81=""
+                d="m12.347656 378.382812h37.390625c4.371094 37.714844 36.316407 66.164063 74.277344 66.164063 37.96875 0 69.90625-28.449219 74.28125-66.164063h241.789063c4.382812 37.714844 36.316406 66.164063 74.277343 66.164063 37.96875 0 69.902344-28.449219 74.285157-66.164063h78.890624c6.882813 0 12.460938-5.578124 12.460938-12.460937v-352.957031c0-6.882813-5.578125-12.464844-12.460938-12.464844h-432.476562c-6.875 0-12.457031 5.582031-12.457031 12.464844v69.914062h-105.570313c-4.074218.011719-7.890625 2.007813-10.21875 5.363282l-68.171875 97.582031-26.667969 37.390625-9.722656 13.835937c-1.457031 2.082031-2.2421872 4.558594-2.24999975 7.101563v121.398437c-.09765625 3.34375 1.15624975 6.589844 3.47656275 9.003907 2.320312 2.417968 5.519531 3.796874 8.867187 3.828124zm111.417969 37.386719c-27.527344 0-49.851563-22.320312-49.851563-49.847656 0-27.535156 22.324219-49.855469 49.851563-49.855469 27.535156 0 49.855469 22.320313 49.855469 49.855469 0 27.632813-22.21875 50.132813-49.855469 50.472656zm390.347656 0c-27.53125 0-49.855469-22.320312-49.855469-49.847656 0-27.535156 22.324219-49.855469 49.855469-49.855469 27.539063 0 49.855469 22.320313 49.855469 49.855469.003906 27.632813-22.21875 50.132813-49.855469 50.472656zm140.710938-390.34375v223.34375h-338.375c-6.882813 0-12.464844 5.578125-12.464844 12.460938 0 6.882812 5.582031 12.464843 12.464844 12.464843h338.375v79.761719h-66.421875c-4.382813-37.710937-36.320313-66.15625-74.289063-66.15625-37.960937 0-69.898437 28.445313-74.277343 66.15625h-192.308594v-271.324219h89.980468c6.882813 0 12.464844-5.582031 12.464844-12.464843 0-6.882813-5.582031-12.464844-12.464844-12.464844h-89.980468v-31.777344zm-531.304688 82.382813h99.703125v245.648437h-24.925781c-4.375-37.710937-36.3125-66.15625-74.28125-66.15625-37.960937 0-69.90625 28.445313-74.277344 66.15625h-24.929687v-105.316406l3.738281-5.359375h152.054687c6.882813 0 12.460938-5.574219 12.460938-12.457031v-92.226563c0-6.882812-5.578125-12.464844-12.460938-12.464844h-69.796874zm-30.160156 43h74.777344v67.296875h-122.265625zm0 0"
+                fill="#ff4c3b"
+              ></path>
+            </svg>
+            <div
+              class="
+                services-info
+                d-md-inline-block d-block
+                text-md-start
+                align-middle
+                m-sm-auto
+                pt-sm-2
+                m-xm-auto
+              "
+            >
+              <h4
+                class="
+                  d-inline-block
+                  text-uppercase
+                  m-0
+                  fw-bold
+                  hover-text
+                  cursor-pointer
+                  fs-18
+                "
+              >
+                Free Shipping
+              </h4>
+              <br />
+              <p class="d-inline-block fs-14 m-0 color-777">
+                Free Shipping World Wide
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              col-lg-4 col-md-4
+              border-end border-sm-none
+              py-4 py-xm-2
+              text-center
+            "
+          >
+            <svg
+              _ngcontent-serverApp-c81=""
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 480 480"
+              xml:space="preserve"
+              style="enable-background: new 0 0 480 480"
+              class="align-middle pe-2"
+            >
+              <g _ngcontent-serverApp-c81="">
+                <g _ngcontent-serverApp-c81="">
+                  <g _ngcontent-serverApp-c81="">
+                    <path
+                      _ngcontent-serverApp-c81=""
+                      d="M472,432h-24V280c-0.003-4.418-3.588-7.997-8.006-7.994c-2.607,0.002-5.05,1.274-6.546,3.41l-112,160     c-2.532,3.621-1.649,8.609,1.972,11.14c1.343,0.939,2.941,1.443,4.58,1.444h104v24c0,4.418,3.582,8,8,8s8-3.582,8-8v-24h24     c4.418,0,8-3.582,8-8S476.418,432,472,432z M432,432h-88.64L432,305.376V432z"
+                      fill="#ff4c3b"
+                    ></path>
+                    <path
+                      _ngcontent-serverApp-c81=""
+                      d="M328,464h-94.712l88.056-103.688c0.2-0.238,0.387-0.486,0.56-0.744c16.566-24.518,11.048-57.713-12.56-75.552     c-28.705-20.625-68.695-14.074-89.319,14.631C212.204,309.532,207.998,322.597,208,336c0,4.418,3.582,8,8,8s8-3.582,8-8     c-0.003-26.51,21.486-48.002,47.995-48.005c10.048-0.001,19.843,3.151,28.005,9.013c16.537,12.671,20.388,36.007,8.8,53.32     l-98.896,116.496c-2.859,3.369-2.445,8.417,0.924,11.276c1.445,1.226,3.277,1.899,5.172,1.9h112c4.418,0,8-3.582,8-8     S332.418,464,328,464z"
+                      fill="#ff4c3b"
+                    ></path>
+                    <path
+                      _ngcontent-serverApp-c81=""
+                      d="M216.176,424.152c0.167-4.415-3.278-8.129-7.693-8.296c-0.001,0-0.002,0-0.003,0     C104.11,411.982,20.341,328.363,16.28,224H48c4.418,0,8-3.582,8-8s-3.582-8-8-8H16.28C20.283,103.821,103.82,20.287,208,16.288     V40c0,4.418,3.582,8,8,8s8-3.582,8-8V16.288c102.754,3.974,185.686,85.34,191.616,188l-31.2-31.2     c-3.178-3.07-8.242-2.982-11.312,0.196c-2.994,3.1-2.994,8.015,0,11.116l44.656,44.656c0.841,1.018,1.925,1.807,3.152,2.296     c0.313,0.094,0.631,0.172,0.952,0.232c0.549,0.198,1.117,0.335,1.696,0.408c0.08,0,0.152,0,0.232,0c0.08,0,0.152,0,0.224,0     c0.609-0.046,1.211-0.164,1.792-0.352c0.329-0.04,0.655-0.101,0.976-0.184c1.083-0.385,2.069-1.002,2.888-1.808l45.264-45.248     c3.069-3.178,2.982-8.242-0.196-11.312c-3.1-2.994-8.015-2.994-11.116,0l-31.976,31.952     C425.933,90.37,331.38,0.281,216.568,0.112C216.368,0.104,216.2,0,216,0s-0.368,0.104-0.568,0.112     C96.582,0.275,0.275,96.582,0.112,215.432C0.112,215.632,0,215.8,0,216s0.104,0.368,0.112,0.568     c0.199,115.917,91.939,210.97,207.776,215.28h0.296C212.483,431.847,216.013,428.448,216.176,424.152z"
+                      fill="#ff4c3b"
+                    ></path>
+                    <path
+                      _ngcontent-serverApp-c81=""
+                      d="M323.48,108.52c-3.124-3.123-8.188-3.123-11.312,0L226.2,194.48c-6.495-2.896-13.914-2.896-20.408,0l-40.704-40.704     c-3.178-3.069-8.243-2.981-11.312,0.197c-2.994,3.1-2.994,8.015,0,11.115l40.624,40.624c-5.704,11.94-0.648,26.244,11.293,31.947     c9.165,4.378,20.095,2.501,27.275-4.683c7.219-7.158,9.078-18.118,4.624-27.256l85.888-85.888     C326.603,116.708,326.603,111.644,323.48,108.52z M221.658,221.654c-0.001,0.001-0.001,0.001-0.002,0.002     c-3.164,3.025-8.148,3.025-11.312,0c-3.125-3.124-3.125-8.189-0.002-11.314c3.124-3.125,8.189-3.125,11.314-0.002     C224.781,213.464,224.781,218.53,221.658,221.654z"
+                      fill="#ff4c3b"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <div
+              class="
+                services-info
+                d-md-inline-block d-block
+                text-md-start
+                align-middle
+                m-sm-auto m-xm-auto
+                pt-sm-2
+              "
+            >
+              <h4
+                class="
+                  d-inline-block
+                  text-uppercase
+                  m-0
+                  fw-bold
+                  hover-text
+                  cursor-pointer
+                  fs-18
+                "
+              >
+                24 x 7 Service
+              </h4>
+              <br />
+              <p class="d-inline-block fs-14 m-0 color-777">
+                Online Service For New Customer
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 py-4 py-xm-2">
+            <svg
+              _ngcontent-serverApp-c81=""
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -14 512.00001 512"
+              class="align-middle pe-2"
+            >
+              <path
+                _ngcontent-serverApp-c81=""
+                d="m136.964844 308.234375c4.78125-2.757813 6.417968-8.878906 3.660156-13.660156-2.761719-4.777344-8.878906-6.417969-13.660156-3.660157-4.78125 2.761719-6.421875 8.882813-3.660156 13.660157 2.757812 4.78125 8.878906 6.421875 13.660156 3.660156zm0 0"
+                fill="#ff4c3b"
+              ></path>
+              <path
+                _ngcontent-serverApp-c81=""
+                d="m95.984375 377.253906 50.359375 87.230469c10.867188 18.84375 35.3125 25.820313 54.644531 14.644531 19.128907-11.054687 25.703125-35.496094 14.636719-54.640625l-30-51.96875 25.980469-15c4.78125-2.765625 6.421875-8.878906 3.660156-13.660156l-13.003906-22.523437c1.550781-.300782 11.746093-2.300782 191.539062-37.570313 22.226563-1.207031 35.542969-25.515625 24.316407-44.949219l-33.234376-57.5625 21.238282-32.167968c2.085937-3.164063 2.210937-7.230469.316406-10.511719l-20-34.640625c-1.894531-3.28125-5.492188-5.203125-9.261719-4.980469l-38.472656 2.308594-36.894531-63.90625c-5.34375-9.257813-14.917969-14.863281-25.605469-14.996094-.128906-.003906-.253906-.003906-.382813-.003906-10.328124 0-19.703124 5.140625-25.257812 13.832031l-130.632812 166.414062-84.925782 49.03125c-33.402344 19.277344-44.972656 62.128907-25.621094 95.621094 17.679688 30.625 54.953126 42.671875 86.601563 30zm102.324219 57.238282c5.523437 9.554687 2.253906 21.78125-7.328125 27.316406-9.613281 5.558594-21.855469 2.144531-27.316407-7.320313l-50-86.613281 34.640626-20c57.867187 100.242188 49.074218 85.011719 50.003906 86.617188zm-22.683594-79.296876-10-17.320312 17.320312-10 10 17.320312zm196.582031-235.910156 13.820313 23.9375-12.324219 18.664063-23.820313-41.261719zm-104.917969-72.132812c2.683594-4.390625 6.941407-4.84375 8.667969-4.796875 1.707031.019531 5.960938.550781 8.527344 4.996093l116.3125 201.464844c3.789063 6.558594-.816406 14.804688-8.414063 14.992188-1.363281.03125-1.992187.277344-5.484374.929687l-123.035157-213.105469c2.582031-3.320312 2.914063-3.640624 3.425781-4.480468zm-16.734374 21.433594 115.597656 200.222656-174.460938 34.21875-53.046875-91.878906zm-223.851563 268.667968c-4.390625-7.597656-6.710937-16.222656-6.710937-24.949218 0-17.835938 9.585937-34.445313 25.011718-43.351563l77.941406-45 50 86.601563-77.941406 45.003906c-23.878906 13.78125-54.515625 5.570312-68.300781-18.304688zm0 0"
+                fill="#ff4c3b"
+              ></path>
+              <path
+                _ngcontent-serverApp-c81=""
+                d="m105.984375 314.574219c-2.761719-4.78125-8.878906-6.421875-13.660156-3.660157l-17.320313 10c-4.773437 2.757813-10.902344 1.113282-13.660156-3.660156-2.761719-4.78125-8.878906-6.421875-13.660156-3.660156s-6.421875 8.878906-3.660156 13.660156c8.230468 14.257813 26.589843 19.285156 40.980468 10.980469l17.320313-10c4.78125-2.761719 6.421875-8.875 3.660156-13.660156zm0 0"
+                fill="#ff4c3b"
+              ></path>
+              <path
+                _ngcontent-serverApp-c81=""
+                d="m497.136719 43.746094-55.722657 31.007812c-4.824218 2.6875-6.5625 8.777344-3.875 13.601563 2.679688 4.820312 8.765626 6.566406 13.601563 3.875l55.71875-31.007813c4.828125-2.6875 6.5625-8.777344 3.875-13.601562-2.683594-4.828125-8.773437-6.5625-13.597656-3.875zm0 0"
+                fill="#ff4c3b"
+              ></path>
+              <path
+                _ngcontent-serverApp-c81=""
+                d="m491.292969 147.316406-38.636719-10.351562c-5.335938-1.429688-10.820312 1.734375-12.25 7.070312-1.429688 5.335938 1.738281 10.816406 7.074219 12.246094l38.640625 10.351562c5.367187 1.441407 10.824218-1.773437 12.246094-7.070312 1.429687-5.335938-1.738282-10.820312-7.074219-12.246094zm0 0"
+                fill="#ff4c3b"
+              ></path>
+              <path
+                _ngcontent-serverApp-c81=""
+                d="m394.199219 7.414062-10.363281 38.640626c-1.429688 5.335937 1.734374 10.816406 7.070312 12.25 5.332031 1.425781 10.816406-1.730469 12.25-7.070313l10.359375-38.640625c1.429687-5.335938-1.734375-10.820312-7.070313-12.25-5.332031-1.429688-10.816406 1.734375-12.246093 7.070312zm0 0"
+                fill="#ff4c3b"
+              ></path>
+            </svg>
+            <div
+              class="
+                services-info
+                d-md-inline-block d-block
+                text-md-start
+                align-middle
+                m-sm-auto m-xm-auto
+                pt-sm-2
+              "
+            >
+              <h4
+                class="
+                  d-inline-block
+                  text-uppercase
+                  m-0
+                  fw-bold
+                  hover-text
+                  cursor-pointer
+                  fs-18
+                "
+              >
+                Festival Offer
+              </h4>
+              <br />
+              <p class="d-inline-block fs-14 m-0 color-777">
+                New Online Special Festival Offer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /services section -->
+
+    <!-- blogs section -->
+    <section class="blogs py-4">
+      <div class="container">
+        <div class="blogs-info text-center">
+          <h4 class="color-orange fs-18">Recent Story</h4>
+          <h2
+            class="
+              fs-36
+              text-uppercase
+              fw-bold
+              position-relative
+              d-inline-block
+              pb-2
+              mb-3
+            "
+          >
+            From The Blog <span class="down-line"></span>
+          </h2>
+        </div>
+        <div class="row pt-3">
+          <div class="col-xl-3 col-sm-6 col-xm-6">
+            <div class="card border-0 rounded-0">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/blog_img_1.jpg"
+                  class="card-img-top rounded-0 img-fluid"
+                  alt="blog_img_1"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h4 class="color-orange fs-18">25 January 2021</h4>
+                <h5
+                  class="
+                    text-uppercase
+                    position-relative
+                    fw-bolder
+                    d-inline-block
+                    pb-3
+                    hover-text
+                    cursor-pointer
+                    fs-18
+                  "
+                >
+                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                  <span class="down-line"></span>
+                </h5>
+                <p class="card-text">
+                  <small class="text-muted">by: John Doe. 2 Comment</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-xm-6">
+            <div class="card border-0">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/blog_img_2.jpg"
+                  class="card-img-top rounded-0 img-fluid"
+                  alt="blog_img_1"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h4 class="color-orange fs-18">16 March 2021</h4>
+                <h5
+                  class="
+                    text-uppercase
+                    position-relative
+                    fw-bolder
+                    d-inline-block
+                    pb-3
+                    hover-text
+                    cursor-pointer
+                    fs-18
+                  "
+                >
+                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                  <span class="down-line"></span>
+                </h5>
+                <p class="card-text">
+                  <small class="text-muted">by: John Doe. 2 Comment</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-xm-6">
+            <div class="card border-0">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/blog_img_3.jpg"
+                  class="card-img-top rounded-0 img-fluid"
+                  alt="blog_img_1"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h4 class="color-orange fs-18">12 June 2021</h4>
+                <h5
+                  class="
+                    text-uppercase
+                    position-relative
+                    fw-bolder
+                    d-inline-block
+                    pb-3
+                    hover-text
+                    cursor-pointer
+                    fs-18
+                  "
+                >
+                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                  <span class="down-line"></span>
+                </h5>
+                <p class="card-text">
+                  <small class="text-muted">by: John Doe. 2 Comment</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-xm-6">
+            <div class="card border-0">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/img/blog_img_2.jpg"
+                  class="card-img-top rounded-0 img-fluid"
+                  alt="blog_img_1"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h4 class="color-orange fs-18">16 March 2021</h4>
+                <h5
+                  class="
+                    text-uppercase
+                    position-relative
+                    fw-bolder
+                    d-inline-block
+                    pb-3
+                    hover-text
+                    cursor-pointer
+                    fs-18
+                  "
+                >
+                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                  <span class="down-line"></span>
+                </h5>
+                <p class="card-text">
+                  <small class="text-muted">by: John Doe. 2 Comment</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /blogs section -->
+
+    <!-- sponsors section -->
+    <section class="sponsors py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-around text-center">
+          <div class="col-lg-2 col-sm-4 col-xm-4">
+            <img
+              class="sponsor-item cursor-pointer"
+              src="./assets/img/sponsor_1.png"
+              alt="sponsor_1"
+            />
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xm-4">
+            <img
+              class="sponsor-item cursor-pointer"
+              src="./assets/img/sponsor_2.png"
+              alt="sponsor_2"
+            />
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xm-4">
+            <img
+              class="sponsor-item cursor-pointer"
+              src="./assets/img/sponsor_3.png"
+              alt="sponsor_2"
+            />
+          </div>
+          <div class="col-lg-2 col-md-6 d-smnone d-xm-none">
+            <img
+              class="sponsor-item cursor-pointer"
+              src="./assets/img/sponsor_4.png"
+              alt="sponsor_2"
+            />
+          </div>
+          <div class="col-lg-2 col-md-6 d-smnone d-xm-none">
+            <img
+              class="sponsor-item cursor-pointer"
+              src="./assets/img/sponsor_5.png"
+              alt="sponsor_2"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /sponsors section -->
+
+    <!-- /main section -->
+
+    <!-- footer section -->
+    <footer class="footer bg-color-f9">
+      <div class="container">
+        <div class="footer-CTA">
+          <div
+            class="
+              row
+              align-items-center
+              border-bottom
+              py-md-4 py-sm-2
+              flex-d-column
+            "
+          >
+            <div class="col-lg-6 border-end my-3 p-0 md-my-0 py-xm-2">
+              <h4 class="footer-CTA-title text-uppercase fw-bolder fs-18">
+                Know it all first!
+              </h4>
+              <p class="footer-CTA-info color-777 m-0 d-none d-lg-block">
+                Never Miss Anything From Multikart By Signing Up To Our
+                Newsletter.
+              </p>
+            </div>
+            <div class="col-lg-6 ps-5 text-end my-3 p-0 md-ps-0">
+              <form action="email">
+                <input
+                  class="border px-1"
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <button
+                  for="email"
+                  class="
+                    input-btn
+                    fw-bold
+                    text-uppercase
+                    border-0
+                    ms-2
+                    cursor-pointer
+                  "
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-navbar py-5">
+          <div class="row flex-m-column flex-xm-column">
+            <div class="col-lg-4 col-md-6">
+              <h5
+                class="
+                  text-uppercase
+                  m-0
+                  fw-bold
+                  color-222
+                  fs-18
+                  d-md-none d-block
+                  border-bottom
+                  pb-sm-1 pb-xm-1
+                "
+              >
+                About
+              </h5>
+              <div class="footer-logo">
+                <img
+                  class="img-fluid pb-4 pt-sm-3 pt-xm-1"
+                  src="./assets/img/logo.png"
+                  alt="Multikart logo"
+                />
+                <p class="letter-space-07em color-777 fs-14 line-height-32px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  repellendus? Iste beatae mollitia non rerum, illo ullam
+                  adipisci voluptatum?
+                </p>
+                <div class="socials pt-4">
+                  <ul class="list-inline">
+                    <li class="list-inline-item pe-45 pe-sm-4">
+                      <a href="#">
+                        <i
+                          class="
+                            fab
+                            fa-facebook-f
+                            cursor-pointer
+                            hover-text
+                            fs-20
+                            text-dark
+                          "
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item pe-45 pe-sm-4">
+                      <a href="#">
+                        <i
+                          class="
+                            fab
+                            fa-google-plus-g
+                            cursor-pointer
+                            hover-text
+                            fs-20
+                            text-dark
+                          "
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item pe-45 pe-sm-4">
+                      <a href="#">
+                        <i
+                          class="
+                            fab
+                            fa-twitter
+                            cursor-pointer
+                            hover-text
+                            fs-20
+                            text-dark
+                          "
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item pe-45 pe-sm-4">
+                      <a href="#">
+                        <i
+                          class="
+                            fab
+                            fa-instagram
+                            cursor-pointer
+                            hover-text
+                            fs-20
+                            text-dark
+                          "
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i
+                          class="
+                            fas
+                            fa-rss
+                            cursor-pointer
+                            hover-text
+                            fs-20
+                            text-dark
+                          "
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 offset-xl-1 color-777">
+              <h5
+                class="
+                  footer-nav-title
+                  text-uppercase
+                  pb-4 pb-sm-1
+                  mb-sm-3
+                  m-0
+                  fw-bold
+                  color-222
+                  fs-18
+                  border-sm-bottom
+                  pb-xm-1
+                "
+              >
+                Categories
+              </h5>
+              <div class="fs-14 hover-underline">
+                <p class="pt-xm-1">Womens Fashion</p>
+                <br />
+                <p>Mens Fashion</p>
+                <br />
+                <p>Kids Fashion</p>
+                <br />
+                <p>Featured</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 color-777">
+              <h5
+                class="
+                  footer-nav-title
+                  text-uppercase
+                  pb-4 pb-sm-1
+                  mb-sm-3
+                  m-0
+                  fw-bold
+                  color-222
+                  fs-18
+                  border-sm-bottom
+                  pb-xm-1
+                "
+              >
+                Why we choose
+              </h5>
+              <div class="fs-14 hover-underline pt-xm-1">
+                <p>Shipping & Return</p>
+                <br />
+                <p>Secure Shopping</p>
+                <br />
+                <p>Gallary</p>
+                <br />
+                <p>Affiliates</p>
+                <br />
+                <p>Contacts</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5
+                class="
+                  footer-nav-title
+                  text-uppercase
+                  pb-4 pb-sm-1
+                  mb-sm-3
+                  m-0
+                  fw-bold
+                  fs-18
+                  border-sm-bottom
+                  pb-xm-1
+                "
+              >
+                Store Information
+              </h5>
+              <ul class="list-unstyled color-777 fs-14 pt-xm-1">
+                <li class="pb-3">
+                  <i class="fas fa-map-marker-alt pe-2"></i>
+                  Multikart Demo Store, Demo Store India 345-659
+                </li>
+                <li class="pb-3">
+                  <i class="fas fa-phone-alt pe-2"></i>
+                  Call Us: 123-456-7898
+                </li>
+                <li class="pb-3">
+                  <i class="far fa-envelope pe-2"></i>
+                  Email Us: Support@Fiot.Com
+                </li>
+                <li class="pb-3">
+                  <i class="fas fa-fax pe-2"></i>
+                  Fax: 123456
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer section -->
+
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/go_to_top.js"></script>
+    <script src="./js/stickyNav.js"></script>
+  </body>
+</html>
